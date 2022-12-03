@@ -57,7 +57,7 @@ export default function Home() {
 </svg>
       </button>
       <p className='font-bold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 p-3 '>
-        The Entry can be found at: <a href={`https://pass-thru.vercel.app/entries/${pin}`} className='text-zinc-200 hover:text-zinc-100'>https://pass-thru.vercel.app/entries/{pin}</a>
+        The Entry can be found at: <a href={`https://pass-thru.vercel.app/entries/${entry.title}`} className='text-zinc-200 hover:text-zinc-100'>https://pass-thru.vercel.app/entries/{entry.title}</a>
       </p>
       <button className='bg-zinc-900 text-zinc-200 font-bold text-2xl p-3 rounded-md flex flex-row gap-4 items-center justify-center hover:scale-95 drop-shadow-xl shadow-xl backdrop-blur-3xl' onClick={()=>{
         window.location.href="/entries/"+entry.title
